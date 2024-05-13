@@ -11,8 +11,10 @@ import android.widget.ProgressBar
 import android.widget.Toast
 
 class SecondActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        var count = 0
         setContentView(R.layout.activity_second)
         val btn4 : Button = findViewById(R.id.btn4)
         val btn5 : Button = findViewById(R.id.btn5)
@@ -37,7 +39,11 @@ class SecondActivity : BaseActivity() {
         }
     }
         btn5.setOnClickListener{
-            imageView.setImageResource(R.drawable.img2)
+            if(count % 2 == 0)
+                imageView.setImageResource(R.drawable.img2)
+            else
+                imageView.setImageResource(R.drawable.img1)
+            count++
         }
         btn6.setOnClickListener{
             if (progressBar.visibility == View.VISIBLE) {

@@ -10,9 +10,13 @@ open class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d("BaseActivity", javaClass.simpleName)
         MainActivity.ActivityCollector.addActivity(this)
+        supportActionBar?.hide()
     }
     override fun onDestroy() {
         super.onDestroy()
         MainActivity.ActivityCollector.removeActivity(this)
     }
+
+
+
 }

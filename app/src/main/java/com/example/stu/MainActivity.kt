@@ -13,6 +13,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mainactivity)
+
         val  btn : Button = findViewById(R.id.btn)
         btn.setOnClickListener{
                 Toast.makeText(this,"you click here",Toast.LENGTH_SHORT).show()
@@ -57,5 +58,8 @@ class MainActivity : BaseActivity() {
             activities.clear()
         }
     }
+
+
 }
+
 
