@@ -11,6 +11,7 @@ import com.example.stu.adapter.FruitAdapter
 import com.example.stu.entity.Fruit
 
 class ListView : AppCompatActivity() {
+//listview
 //    private val fruitList = ArrayList<Fruit>()
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
@@ -29,7 +30,6 @@ class ListView : AppCompatActivity() {
 //
 //    }
 //
-//
 //    private fun initFruits() {
 //        repeat(2) {
 //            fruitList.add(Fruit("Apple", R.drawable.apple_pic))
@@ -45,6 +45,9 @@ class ListView : AppCompatActivity() {
 //        }
 //    }
 
+
+
+    //RecycleView
     private val fruitList = ArrayList<Fruit>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +55,8 @@ class ListView : AppCompatActivity() {
         initFruits() // 初始化水果数据
         val recyclerView : RecyclerView = findViewById(R.id.recyclerView)
         val layoutManager = LinearLayoutManager(this)
+        //布局方向
+        //layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         recyclerView.layoutManager = layoutManager
         val adapter = FruitAdapter(fruitList)
         recyclerView.adapter = adapter

@@ -18,6 +18,7 @@ class FirstActivity : BaseActivity() {
         val btn1 : Button = findViewById(R.id.btn1)
         val btn2 : Button = findViewById(R.id.btn2)
         val btn3 : Button = findViewById(R.id.btn3)
+        val btn4 : Button = findViewById(R.id.btn4)
 
         btn1.setOnClickListener{
             val intent = Intent(this,SecondActivity::class.java)
@@ -34,7 +35,10 @@ class FirstActivity : BaseActivity() {
 //            intent.data = Uri.parse("tel:10086")
             startActivity(intent)
         }
-
+        btn4.setOnClickListener{
+            val intent = Intent(this,com.example.stu.RecycleView::class.java)
+            startActivity(intent)
+        }
 
     }
 }
