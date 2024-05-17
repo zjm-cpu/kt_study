@@ -18,7 +18,7 @@
         android:layout_marginTop="30sp"
         android:layout_gravity="center"
         android:text="按钮1"
-        android:textSize="30sp"
+        android:textSize="20sp"
         />
     <Button
         android:id="@+id/btn2"
@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
         android:layout_gravity="center"
-        android:text="按钮2"
-        android:textSize="30sp"
+        android:text="baidu"
+        android:textSize="20sp"
         />
     <Button
         android:id="@+id/btn3"
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
         android:layout_gravity="center"
-        android:text="按钮2"
-        android:textSize="30sp"
+        android:text="listview"
+        android:textSize="20sp"
         />
 
 </LinearLayout>

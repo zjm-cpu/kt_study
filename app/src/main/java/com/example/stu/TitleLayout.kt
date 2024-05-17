@@ -14,6 +14,7 @@ class TitleLayout (context: Context, attrs: AttributeSet) : LinearLayout(context
         val titleBack : Button = findViewById(R.id.titleBack)
         val titleMenu : Button = findViewById(R.id.titleMenu)
         titleBack.setOnClickListener {
+            //as强制类型转换
             val activity = context as Activity
             activity.finish()
         }
